@@ -7,30 +7,6 @@ public class DigitalVideoDisc {
         public String getTitle() {
             return title;
         }
-
-        public void DVD (String title) {
-            this.title = title;
-        }
-
-        public void DVD (String category, String title) {
-            this.category = category;
-            this.title = title;
-        }
-
-        public void DVD(String director, String category, String title) {
-            this.director =director;
-            this.category = category;
-            this.title = title;
-        }
-
-        public void DVD(String director, String category, String title, int length, float cost) {
-            this.director = director;
-            this.category = category;
-            this.title = title;
-            this.length = length;
-            this.cost = cost;
-        }
-
         public void setTitle(String title) {
             this.title = title;
         }
@@ -56,6 +32,32 @@ public class DigitalVideoDisc {
             return cost;
         }
         public void setCost(float cost) {
+            this.cost = cost;
+        }
+
+        /*Constructor to DigitalVideoDisc class */
+
+        public DigitalVideoDisc (String title) {
+            super();
+            this.title = title;
+        }
+
+        public DigitalVideoDisc (String category, String title) {
+            this.category = category;
+            this.title = title;
+        }
+
+        public DigitalVideoDisc(String director, String category, String title) {
+            this.director =director;
+            this.category = category;
+            this.title = title;
+        }
+
+        public DigitalVideoDisc(String director, String category, String title, int length, float cost) {
+            this.director = director;
+            this.category = category;
+            this.title = title;
+            this.length = length;
             this.cost = cost;
         }
 
